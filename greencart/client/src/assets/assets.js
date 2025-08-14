@@ -788,7 +788,7 @@ export const dummyAddress = [
     userId: "67b5880e4d09769c5ca61644",
     firstName: "Great",
     lastName: "Stack",
-    email: "user.greatstack@gmail.com",
+    email: "user.g@gmail.com",
     street: "Street 123",
     city: "Main City",
     state: "New State",
