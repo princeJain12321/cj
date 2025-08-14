@@ -18,10 +18,13 @@ const port = process.env.PORT || 4000;
 await connectDB()
 await connectCloudinary()
 
+
 // Allow multiple origins
 const allowedOrigins = ['http://localhost:5173', 'https://cj-ten.vercel.app']
 
 app.post('/stripe', express.raw({type: 'application/json'}), stripeWebhooks)
+
+app.set('trust proxy', 1);
 
 // Middleware configuration
 app.use(express.json());
